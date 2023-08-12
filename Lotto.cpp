@@ -38,4 +38,6 @@ void lotto(int total_balls, int balls_to_allot)
 	    }
 	 }
     }
+
+    delete[] balls; // Remove table in memory
 }
