@@ -52,11 +52,12 @@ int main(void)
 
    int dynamicTotal = addPositiveNumbers(dynamicTable, n);
    cout << "Result positive numbers: " << dynamicTotal << endl;
+   
+   delete[] dynamicTable;
 }
 
 int addPositiveNumbers(int arr[], int length)
 {  
-   
    int total = 0;
    
    for (int i = 0; i < length; i++)
@@ -66,7 +67,6 @@ int addPositiveNumbers(int arr[], int length)
          total += arr[i];  
       }
    }
-   
    return total;
 }
 
