@@ -19,6 +19,11 @@ class human
         this->name = name;
     }
 
+    string getName()
+    {
+        return name;
+    }
+
     string getSurname() const //Static method const need to add
     {
         return surname;
